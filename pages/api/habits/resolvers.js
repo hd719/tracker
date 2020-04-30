@@ -1,11 +1,11 @@
 export const habitsResolvers = {
   Query: {
-    async getHabit() {
-      console.log("get habit");
+    async habits() {
+      console.log("habits");
       return [
         {
-          _id: "id",
-          name: "make bed",
+          _id: "1",
+          name: "Make my bed",
         },
       ];
     },
