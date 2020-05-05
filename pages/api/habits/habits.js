@@ -1,6 +1,5 @@
-// Database collection (model data)
-
-import mongoose, { schema, Schema } from "mongoose";
+// Database collection
+import mongoose, { Schema } from "mongoose";
 
 // how the data will in the database
 export const HabitsSchema = new Schema({
@@ -10,4 +9,4 @@ export const HabitsSchema = new Schema({
   },
 });
 
-export default mongoose.model.habits || mongoose.model("habits", HabitsSchema); // attaches the schema to the model
+export default mongoose.models.habits || mongoose.model("habits", HabitsSchema); // attaches the schema to the model
